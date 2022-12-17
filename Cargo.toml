@@ -1,0 +1,10 @@
+[package]
+name = "spam-block-reqs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+bitcoin = { version = "0.29.2", features = ["rand"] }
+log = "0.4.17"
+env_logger = "0.10.0"
