@@ -1,5 +1,9 @@
-Spams block requests for block 750k via p2p `GETDATA` msg.
+## Spam Block Requests
+
+Spams requests to bitcoind for `block`/`cmpctblock`/`blocktxn` responses.
+Prints elapsed time to benchmark.
 
 ```bash
-$ RUST_LOG=trace cargo run --release
+$ cargo build --release
+$ ./target/release/spam-block-reqs [-h]
 ```
